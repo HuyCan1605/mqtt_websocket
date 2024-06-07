@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actuator and Sensor Interface</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js">
+    </script>
+    <script src="https://unpkg.com/mqtt/dist/mqtt.min.js"></script>
+</head>
+
+<body>
+    <div class="actuator-header">
+        <h1>Actuator</h1>
+    </div>
+    <div class="actuator">
+        <div>
+            <h2>Air Condition</h2>
+            <div id="actuator1-status">OFF</div>
+        </div>
+        <div>
+            <h2>Dehumidifiers</h2>
+            <div id="actuator2-status">OFF</div>
+        </div>
+        <div>
+            <h2>Valve</h2>
+            <div id="actuator3-status">OFF</div>
+        </div>
+    </div>
+    <div class="sensor-header">
+        <h1>Sensor Char</h1>
+    </div>
+    <div class="chart-container">
+        <canvas id="sensorChart" style="width:100%;max-width:700px"></canvas>></canvas>
+    </div>
+    <div class="buttons_container">
+        <div class="buttons_sensor">
+            <button id="btn-sensor1">Heat Sensor</button>
+            <button id="btn-sensor2">Moister Sensor</button>
+            <button id="btn-sensor3">Water Sensor</button>
+        </div>
+    
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
