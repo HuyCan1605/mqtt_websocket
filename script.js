@@ -65,10 +65,6 @@ function updateActuators(sensorData) {
     actuator3Status.textContent = sensorData.sensor3 > threshold_up || sensorData.sensor3 < threshold_down? 'ON' : 'OFF';
 }
 
-function tryAgainSensor() {
-    alert("Try Again button for Sensor Char clicked!");
-    // Add your logic here to handle the try again functionality for sensors.
-}
 
 // Function to toggle sensor visibility
 function toggleSensor(sensorIndex) {
@@ -88,10 +84,6 @@ document.getElementById('btn-sensor3').addEventListener('click', () => {
     toggleSensor(2);
 });
 
-function showActuatorStatus(actuatorNumber) {
-    alert(`Show status for Actuator ${actuatorNumber} clicked!`);
-    // Add your logic here to show specific actuator status.
-}
 
 // MQTT Setup
 const client = mqtt.connect('ws://127.0.0.1:9001/mqtt');
